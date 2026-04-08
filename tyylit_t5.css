@@ -36,6 +36,7 @@ td {
 ol {
     background: white;
     padding: 20px;
+    width: 400px;
 }
 ol li {
     background: grey;
@@ -47,6 +48,7 @@ ol li {
 ul{
     background: white;
     padding: 20px;
+    width: 400px;
 }
 
 ul li {
