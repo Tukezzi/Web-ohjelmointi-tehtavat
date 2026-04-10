@@ -1,11 +1,3 @@
-.header {
-    background-color: #e6f0ff;
-}
-
-.vari {
-    background-color: #e6f0ff;
-}
-
 .navbar {
   display: flex;
   background-color: red;
@@ -21,6 +13,16 @@
 .navbar a:hover {
   background-color: white;
   color: red;
+}
+
+.tekstit {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.kuva {
+    display: flex;
+    justify-content: center;
 }
 
 .otsikko {
