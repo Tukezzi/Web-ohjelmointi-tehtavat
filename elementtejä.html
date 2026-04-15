@@ -15,6 +15,8 @@
         <a href="tyylisivuista.html">Tyylisivu</a>
         <a href="muotoiluja.html">Muotoiluja-sivu</a>
         <a href="toiminnollinen.html">Toiminnollinen sivu</a>
+        <button class="button" onclick="tumma()">Tumma teema</button>
+        <button class="button" onclick="vaalea()">Vaalea teema</button>
     </div>
     
     <br>
@@ -71,6 +73,29 @@
         Video ei toimi selaimessasi.
     </video>
     <p>Video on autoplay mute tilassa, joten siksi ei ääniä kuulu.</p>
+
+
+    <script>
+        function vaalea() {
+            document.body.classList.remove('tumma');
+            document.body.classList.add('vaalea');
+            localStorage.setItem('theme', 'vaalea');
+        }
+
+        function tumma() {
+            document.body.classList.remove('vaalea');
+            document.body.classList.add('tumma');
+            localStorage.setItem('theme', 'tumma');
+        }
+        window.onload = function() {
+            const theme = localStorage.getItem('theme');
+            if (theme) {
+                document.body.classList.add(theme);
+            } else {
+                document.body.classList.add('vaalea');
+            }
+        }
+    </script>
    
     
 </body>

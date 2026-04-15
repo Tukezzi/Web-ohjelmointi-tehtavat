@@ -1,3 +1,4 @@
+/*väliaikasta, ehkä
 body {
     background-color: black;
 }
@@ -57,6 +58,9 @@ ul li {
     margin: 5px
 }
 
+*/
+
+
 .navbar {
   display: flex;
   background-color: red;
@@ -72,4 +76,26 @@ ul li {
 .navbar a:hover {
   background-color: white;
   color: red;
+}
+
+body.vaalea {
+    background-color: white;
+    color: black;
+}
+
+body.tumma {
+    background-color: black;
+    color: white;
+}
+
+.button {
+    color: white;
+    background-color: red;
+    border: 0cap;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: white;
+    color: red;
 }

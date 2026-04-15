@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
-<body>
+<body class="vaalea">
     <div class="otsikko">
         <h1>HTML-muotoiluja</h1>
     </div>
@@ -16,6 +17,8 @@
         <a href="elementtejä.html">HTML-elementtejä sivu</a>
         <a href="tyylisivuista.html">Tyylisivu</a>
         <a href="toiminnollinen.html">Toiminnollinen sivu</a>
+        <button class="button" onclick="tumma()">Tumma teema</button>
+        <button class="button" onclick="vaalea()">Vaalea teema</button>
     </div>
 
     <h2>Teksti</h2>
@@ -66,6 +69,31 @@
     <td class="vari">14</td><td>30</td><td>31</td><td colspan="5"></td>
   </tr>
 </table>
+
+
+
+
+<script>
+        function vaalea() {
+            document.body.classList.remove('tumma');
+            document.body.classList.add('vaalea');
+            localStorage.setItem('theme', 'vaalea');
+        }
+
+        function tumma() {
+            document.body.classList.remove('vaalea');
+            document.body.classList.add('tumma');
+            localStorage.setItem('theme', 'tumma');
+        }
+        window.onload = function() {
+            const theme = localStorage.getItem('theme');
+            if (theme) {
+                document.body.classList.add(theme);
+            } else {
+                document.body.classList.add('vaalea');
+            }
+        }
+</script>
 
 
 

@@ -1,3 +1,4 @@
+/*
 .header {
     background-color: #e6f0ff;
 }
@@ -5,7 +6,7 @@
 .vari {
     background-color: #e6f0ff;
 }
-
+*/
 .navbar {
   display: flex;
   background-color: red;
@@ -25,4 +26,38 @@
 
 .otsikko {
     text-align: center;
+}
+
+body.vaalea {
+    background-color: white;
+    color: black;
+    .vari {
+      background-color: #e6f0ff;
+    }
+    .header {
+      background-color: #e6f0ff;
+    }
+}
+
+body.tumma {
+    background-color: black;
+    color: white;
+    .vari {
+      background-color: gray;
+    }
+    .header {
+      background-color: gray;
+    }
+}
+
+.button {
+    color: white;
+    background-color: red;
+    border: 0cap;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: white;
+    color: red;
 }
